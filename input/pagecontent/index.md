@@ -1,6 +1,6 @@
 # Nordic Hackathon 2025
 
-This IG contains the FHIR Implementation Guide (IG) developed during the Nordic Hackathon for Coordinated Health and Social Care. 
+This IG contains the [FHIR Implementation Guide (IG)](https://build.fhir.org/ig/vadi2/nordic-hackathon-2025-ig/branches/main/index.html) developed during the Nordic Hackathon for Coordinated Health and Social Care. 
 
 ## Overview
 
@@ -8,7 +8,7 @@ The IG provides FHIR profiles and resources to enhance data interoperability bet
 
 ## Contents
 
-- **Profiles**: Customized FHIR profiles for patient data, care plans, and service delivery.
+- **Profiles**: Customized FHIR profiles for patient data, care plans, and service delivery. The profiles are 'shallow' and do not go into the full details for the purposes of this Hackathon.
 - **Examples**: Sample FHIR resources demonstrating the profiles in use.
 
 See [artifacts](artifacts.html) for the generated IG artifacts.
