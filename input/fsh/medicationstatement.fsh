@@ -6,6 +6,7 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
 * status MS
 * medication 1..1 MS
 * subject 1..1 MS
+* effectiveDateTime 1..1 MS
 * dosage 1..1 MS
   * text 1..1 MS
   * timing 1..1 MS
@@ -13,8 +14,10 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
 
 Instance: medicationstatement-blood-pressure
 InstanceOf: NordicMedicationStatement
+Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
+* effectiveDateTime = "2025-03-20"
 * medication.concept.coding
   * system = "http://www.whocc.no/atc"
   * code = #C09AA02
@@ -30,8 +33,10 @@ InstanceOf: NordicMedicationStatement
 
 Instance: medicationstatement-diabetes
 InstanceOf: NordicMedicationStatement
+Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
+* effectiveDateTime = "2025-12-09"
 * medication.concept.coding
   * system = "http://www.whocc.no/atc"
   * code = #A10BA02
@@ -47,8 +52,10 @@ InstanceOf: NordicMedicationStatement
 
 Instance: medicationstatement-cholesterol
 InstanceOf: NordicMedicationStatement
+Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
+* effectiveDateTime = "2022-10-11"
 * medication.concept.coding
   * system = "http://www.whocc.no/atc"
   * code = #C10AA01

@@ -44,15 +44,17 @@ Usage: #example
 
 Instance: observation-hba1c
 InstanceOf: NordicObservation
+Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
-* valueQuantity = 7.5 '%' "%"
+* valueQuantity = 52 'mmol/mol' "mmol/mol"
 
 Instance: observation-lipids
 InstanceOf: NordicObservation
+Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#2093-3 "Cholesterol in Blood"
@@ -62,10 +64,41 @@ InstanceOf: NordicObservation
 
 Instance: observation-bmi
 InstanceOf: NordicObservation
+Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
-* valueQuantity = 24.8 'kg/m2' "kg/m2"
+* valueQuantity = 18.2 'kg/m2' "kg/m2"
+
+Instance: observation-height
+InstanceOf: NordicObservation
+Usage: #example
+* meta.profile = Canonical(NordicObservation)
+* status = #final
+* code = $loinc#8302-2 "Body height"
+* subject = Reference(Patient/67890) "Arne Johansson"
+* effectiveDateTime = "2025-03-20T10:30:00+01:00"
+* valueQuantity = 1.75 'm' "m"
+
+Instance: observation-weight
+InstanceOf: NordicObservation
+Usage: #example
+* meta.profile = Canonical(NordicObservation)
+* status = #final
+* code = $loinc#29463-7 "Body weight"
+* subject = Reference(Patient/67890) "Arne Johansson"
+* effectiveDateTime = "2025-03-20T10:30:00+01:00"
+* valueQuantity = 55.74 'kg' "kg"
+
+Instance: observation-kidney-function
+InstanceOf: NordicObservation
+Usage: #example
+* meta.profile = Canonical(NordicObservation)
+* status = #final
+* code = $loinc#33914-3 "Glomerular filtration rate/1.73 sq M.predicted"
+* subject = Reference(Patient/67890) "Arne Johansson"
+* effectiveDateTime = "2025-03-20T10:30:00+01:00"
+* valueQuantity = 50 'mL/min' "ml/min"
