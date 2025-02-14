@@ -51,6 +51,14 @@
         "name": "NordicAppointment",
         "description": "A sample appointment.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NordicObservation"
+        },
+        "name": "NordicObservation",
+        "description": "A sample appointment.",
+        "isExample": false
       }
     ],
     "page": {

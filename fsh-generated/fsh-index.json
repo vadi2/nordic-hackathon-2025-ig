@@ -30,5 +30,13 @@
     "fshFile": "patient.fsh",
     "startLine": 3,
     "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-NordicObservation.json",
+    "fshName": "NordicObservation",
+    "fshType": "Profile",
+    "fshFile": "observation.fsh",
+    "startLine": 4,
+    "endLine": 11
   }
 ]
