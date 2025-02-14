@@ -2,4 +2,5 @@
 [nordic-appointment-example-3]: Appointment-nordic-appointment-example-3.html
 [nordic-appointment-home-visit]: Appointment-nordic-appointment-home-visit.html
 [NordicAppointment]: StructureDefinition-NordicAppointment.html
+[NordicMedicationStatement]: StructureDefinition-NordicMedicationStatement.html
 [NordicObservation]: StructureDefinition-NordicObservation.html

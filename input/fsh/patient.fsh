@@ -2,7 +2,7 @@ Alias: $service-category = http://terminology.hl7.org/CodeSystem/service-categor
 
 Profile: NordicAppointment
 Parent: Appointment
-Description: "A sample appointment."
+Description: "An appointment profile for the Nordic Hackathon 2025"
 * created 1..1 MS
 * subject 0..1 MS
 * start 1..1 MS

@@ -3,7 +3,7 @@ Alias: $loinc = http://loinc.org
 
 Profile: NordicObservation
 Parent: Observation
-Description: "A sample appointment."
+Description: "An observation profile for the Nordic Hackathon 2025"
 * status MS
 * category MS
 * code 1..1 MS

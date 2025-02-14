@@ -1,6 +1,7 @@
-Output File                                     Name                           Type      FSH File         Lines
-Appointment-nordic-appointment-example-3.json   nordic-appointment-example-3   Instance  patient.fsh      33 - 51
-Appointment-nordic-appointment-example.json     nordic-appointment-example     Instance  patient.fsh      13 - 31
-Appointment-nordic-appointment-home-visit.json  nordic-appointment-home-visit  Instance  patient.fsh      53 - 71
-StructureDefinition-NordicAppointment.json      NordicAppointment              Profile   patient.fsh      3 - 11
-StructureDefinition-NordicObservation.json      NordicObservation              Profile   observation.fsh  4 - 11
+Output File                                         Name                           Type      FSH File                  Lines
+Appointment-nordic-appointment-example-3.json       nordic-appointment-example-3   Instance  patient.fsh               33 - 51
+Appointment-nordic-appointment-example.json         nordic-appointment-example     Instance  patient.fsh               13 - 31
+Appointment-nordic-appointment-home-visit.json      nordic-appointment-home-visit  Instance  patient.fsh               53 - 71
+StructureDefinition-NordicAppointment.json          NordicAppointment              Profile   patient.fsh               3 - 11
+StructureDefinition-NordicMedicationStatement.json  NordicMedicationStatement      Profile   medicationstatements.fsh  1 - 12
+StructureDefinition-NordicObservation.json          NordicObservation              Profile   observation.fsh           4 - 11

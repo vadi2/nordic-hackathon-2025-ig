@@ -49,7 +49,15 @@
           "reference": "StructureDefinition/NordicAppointment"
         },
         "name": "NordicAppointment",
-        "description": "A sample appointment.",
+        "description": "An appointment profile for the Nordic Hackathon 2025",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NordicMedicationStatement"
+        },
+        "name": "NordicMedicationStatement",
+        "description": "A medicationstatement profile for the Nordic Hackathon 2025",
         "isExample": false
       },
       {
@@ -57,7 +65,7 @@
           "reference": "StructureDefinition/NordicObservation"
         },
         "name": "NordicObservation",
-        "description": "A sample appointment.",
+        "description": "An observation profile for the Nordic Hackathon 2025",
         "isExample": false
       }
     ],
