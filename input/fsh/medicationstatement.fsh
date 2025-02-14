@@ -10,7 +10,7 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
 * dosage 1..1 MS
   * text 1..1 MS
   * timing 1..1 MS
-  * doseAndRate 1..1 MS
+  * doseAndRate 0..1 MS
 
 Instance: medicationstatement-kol
 InstanceOf: NordicMedicationStatement
