@@ -4,7 +4,7 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# Resolution errors are ignored as this is a sample IG and not all auxilarry instances are included
+# Resolution errors are ignored as this is a sample IG and not all auxiliary instances are included
 %cannot be resolved%
 Unable to resolve resource%
 %does not resolve%
