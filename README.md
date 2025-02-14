@@ -1,4 +1,4 @@
-# FHIR Implementation Guide for Coordinated Health and Social Care
+# Nordic Hackathon 2025
 
 This repository contains the FHIR Implementation Guide (IG) developed during the Nordic Hackathon for Coordinated Health and Social Care. 
 
