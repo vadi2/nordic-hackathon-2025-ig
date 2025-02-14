@@ -14,7 +14,7 @@ Instance: condition-diabetes
 InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
-* code = $icd-10#E11.7 "Type 2 diabetes mellitus"
+* code = $icd-10#E11.7 "Type 2 diabetes mellitus : With multiple complications"
 * subject = Reference(Patient/67890) "Arne Johansson"
 
 Instance: condition-hypertension

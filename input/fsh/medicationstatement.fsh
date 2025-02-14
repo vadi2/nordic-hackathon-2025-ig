@@ -21,7 +21,7 @@ Usage: #example
   * coding[0]
     * system = "http://www.whocc.no/atc"
     * code = #R03AL08
-    * display = "Trimbow inhalation spray"
+    * display = "vilanterol, umeclidinium bromide and fluticasone furoate"
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20190917000010
@@ -33,7 +33,6 @@ Usage: #example
     * frequency = 2
     * period = 1
     * periodUnit = #d
-  * doseAndRate.doseQuantity = 2 'puff' "puffs"
 
 Instance: medicationstatement-diabetes
 InstanceOf: NordicMedicationStatement
@@ -91,7 +90,7 @@ Usage: #example
   * coding[+]
     * system = "http://www.whocc.no/atc"
     * code = #A10BB12
-    * display = "Glimepirid"
+    * display = "glimepiride"
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20050701000261
@@ -114,7 +113,7 @@ Usage: #example
   * coding[+]
     * system = "http://www.whocc.no/atc"
     * code = #C09BA02
-    * display = "Enalapril"
+    * display = "enalapril and diuretics"
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20201110100183

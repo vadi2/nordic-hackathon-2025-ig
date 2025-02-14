@@ -1,5 +1,9 @@
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
+Alias: $sct = http://snomed.info/sct
 
 Profile: NordicObservation
 Parent: Observation
@@ -10,12 +14,6 @@ Description: "An observation profile for the Nordic Hackathon 2025"
 * effectiveDateTime 1..1 MS
 * valueQuantity MS
 * component MS
-
-Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: $loinc = http://loinc.org
-Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
-Alias: $sct = http://snomed.info/sct
-Alias: $clinical-codes = http://acme.org/devices/clinical-codes
 
 Instance: observation-blood-pressure
 InstanceOf: NordicObservation
@@ -32,7 +30,6 @@ Usage: #example
   * code
     * coding[0] = $loinc#8480-6 "Systolic blood pressure"
     * coding[+] = $sct#271649006 "Systolic blood pressure"
-    * coding[+] = $clinical-codes#bp-s "Systolic Blood pressure"
   * valueQuantity = 107 'mm[Hg]' "mmHg"
   * interpretation = $v3-ObservationInterpretation#N "normal"
     * text = "Normal"
@@ -57,7 +54,7 @@ InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
-* code = $loinc#2093-3 "Cholesterol in Blood"
+* code = $loinc#2093-3 "Cholesterol, Blood"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 5.2 'mmol/L' "mmol/L"
@@ -78,6 +75,7 @@ InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
+* category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#8302-2 "Body height"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
@@ -88,6 +86,7 @@ InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
+* category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#29463-7 "Body weight"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
@@ -108,7 +107,7 @@ InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
-* code = $loinc#33914-3 "GFR/1.73 sq M.predicted MDRD [Vol rate/Area]"
+* code = $loinc#33914-3 "GFR/1.73 Sq M.predicted, Blood"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 50 'mL/min' "ml/min"
@@ -128,7 +127,7 @@ InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
-* code = $loinc#20150-9 "FEV1 post bronchodilation"
+* code = $loinc#20150-9 "FEV1"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 83 '%' "%"

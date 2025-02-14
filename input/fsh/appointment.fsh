@@ -59,7 +59,7 @@ Usage: #example
 * subject = Reference(Patient/67890) "Arne Johansson"
 * start = "2025-03-20T10:00:00+01:00"
 * end = "2025-03-20T11:00:00+01:00"
-* serviceCategory = $service-category#31 "Elderly Care"
+* serviceCategory = $service-category#7 "Community Health Care"
 * participant[0]
   * actor = Reference(Practitioner/55555) "Nurse Ingrid Karlsson"
   * status = #accepted
@@ -80,7 +80,7 @@ Usage: #example
 * subject = Reference(Patient/67890) "Arne Johansson"
 * start = "2025-03-25T08:00:00+01:00"
 * end = "2025-03-25T08:30:00+01:00"
-* serviceCategory = $service-category#42 "Home Care"
+* serviceCategory = $service-category#7 "Community Health Care"
 * participant[0]
   * actor = Reference(Practitioner/45678) "Nurse Lisa Andersson"
   * status = #accepted
