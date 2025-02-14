@@ -93,12 +93,42 @@ Usage: #example
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 55.74 'kg' "kg"
 
+Instance: observation-cystatin-c
+InstanceOf: NordicObservation
+Usage: #example
+* meta.profile = Canonical(NordicObservation)
+* status = #final
+* code = $loinc#33863-2 "Cystatin C [Mass/volume] in Serum or Plasma"
+* subject = Reference(Patient/67890) "Arne Johansson"
+* effectiveDateTime = "2025-03-20T10:30:00+01:00"
+* valueQuantity = 1.2 'mg/L' "mg/L"
+
 Instance: observation-kidney-function
 InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
-* code = $loinc#33914-3 "Glomerular filtration rate/1.73 sq M.predicted"
+* code = $loinc#33914-3 "GFR/1.73 sq M.predicted MDRD [Vol rate/Area]"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 50 'mL/min' "ml/min"
+
+Instance: observation-triglycerides
+InstanceOf: NordicObservation
+Usage: #example
+* meta.profile = Canonical(NordicObservation)
+* status = #final
+* code = $loinc#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
+* subject = Reference(Patient/67890) "Arne Johansson"
+* effectiveDateTime = "2025-03-20T10:30:00+01:00"
+* valueQuantity = 1.9 'mmol/L' "mmol/L"
+
+Instance: observation-fev1-after-bd
+InstanceOf: NordicObservation
+Usage: #example
+* meta.profile = Canonical(NordicObservation)
+* status = #final
+* code = $loinc#20150-9 "FEV1 post bronchodilation"
+* subject = Reference(Patient/67890) "Arne Johansson"
+* effectiveDateTime = "2025-03-20T10:30:00+01:00"
+* valueQuantity = 83 '%' "%"
