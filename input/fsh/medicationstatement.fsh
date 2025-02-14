@@ -17,10 +17,14 @@ InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
-* medication.concept.coding
-  * system = "http://www.whocc.no/atc"
-  * code = #R03AL08
-  * display = "Trimbow inhalation spray"
+* medication.concept
+  * coding[0]
+    * system = "http://www.whocc.no/atc"
+    * code = #R03AL08
+    * display = "Trimbow inhalation spray"
+  * coding[+]
+    * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
+    * code = #20190917000010
 * effectiveDateTime = "2025-03-20"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * dosage
@@ -31,35 +35,20 @@ Usage: #example
     * periodUnit = #d
   * doseAndRate.doseQuantity = 2 'puff' "puffs"
 
-Instance: medicationstatement-blood-pressure
-InstanceOf: NordicMedicationStatement
-Usage: #example
-* meta.profile = Canonical(NordicMedicationStatement)
-* status = #recorded
-* effectiveDateTime = "2025-03-20"
-* medication.concept.coding
-  * system = "http://www.whocc.no/atc"
-  * code = #C09AA02
-  * display = "Enalapril"
-* subject = Reference(Patient/67890) "Arne Johansson"
-* dosage
-  * text = "10 mg once daily"
-  * timing.repeat
-    * frequency = 1
-    * period = 1
-    * periodUnit = #d
-  * doseAndRate.doseQuantity = 10 'mg' "mg"
-
 Instance: medicationstatement-diabetes
 InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
 * effectiveDateTime = "2025-12-09"
-* medication.concept.coding
-  * system = "http://www.whocc.no/atc"
-  * code = #A10BA02
-  * display = "Metformin"
+* medication.concept
+  * coding[+]
+    * system = "http://www.whocc.no/atc"
+    * code = #A10BA02
+    * display = "Metformin"
+  * coding[+]
+    * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
+    * code = #20200601000056
 * subject = Reference(Patient/67890) "Arne Johansson"
 * dosage
   * text = "500 mg twice daily"
@@ -75,10 +64,14 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
 * effectiveDateTime = "2022-10-11"
-* medication.concept.coding
-  * system = "http://www.whocc.no/atc"
-  * code = #C10AA01
-  * display = "Simvastatin"
+* medication.concept
+  * coding
+    * system = "http://www.whocc.no/atc"
+    * code = #C10AA01
+    * display = "Simvastatin"
+  * coding[+]
+    * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
+    * code = #20080219000026
 * subject = Reference(Patient/67890) "Arne Johansson"
 * dosage
   * text = "20 mg once daily at bedtime"
@@ -94,10 +87,14 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
 * effectiveDateTime = "2022-04-20"
-* medication.concept.coding
-  * system = "http://www.whocc.no/atc"
-  * code = #A10BB12
-  * display = "Glimepirid"
+* medication.concept
+  * coding[+]
+    * system = "http://www.whocc.no/atc"
+    * code = #A10BB12
+    * display = "Glimepirid"
+  * coding[+]
+    * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
+    * code = #20050701000261
 * subject = Reference(Patient/67890) "Arne Johansson"
 * dosage
   * text = "2 mg once daily with breakfast"
@@ -113,10 +110,14 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
 * effectiveDateTime = "2025-03-21"
-* medication.concept.coding
-  * system = "http://www.whocc.no/atc"
-  * code = #C09BA02
-  * display = "Enalapril"
+* medication.concept
+  * coding[+]
+    * system = "http://www.whocc.no/atc"
+    * code = #C09BA02
+    * display = "Enalapril"
+  * coding[+]
+    * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
+    * code = #20201110100183
 * subject = Reference(Patient/67890) "Arne Johansson"
 * dosage
   * text = "10 mg once daily"
