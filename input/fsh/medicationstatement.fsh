@@ -16,7 +16,7 @@ Instance: medicationstatement-kol
 InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
-* status = #active
+* status = #recorded
 * medication.concept
   * coding[0]
     * system = "http://www.whocc.no/atc"
@@ -85,7 +85,7 @@ Instance: medicationstatement-glimepirid-diabetes
 InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
-* status = #active
+* status = #recorded
 * effectiveDateTime = "2022-04-20"
 * medication.concept
   * coding[+]
@@ -108,7 +108,7 @@ Instance: medicationstatement-enalapril-hypertension
 InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
-* status = #active
+* status = #recorded
 * effectiveDateTime = "2025-03-21"
 * medication.concept
   * coding[+]
