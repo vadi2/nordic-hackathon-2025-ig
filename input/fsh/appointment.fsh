@@ -39,7 +39,7 @@ Usage: #example
 * subject = Reference(Patient/67890) "Arne Johansson"
 * start = "2025-03-10T10:00:00+01:00"
 * end = "2025-03-10T10:45:00+01:00"
-* serviceCategory = $service-category#21 "Cardiology"
+* serviceCategory = $service-category#27 "Specialist Medical"
 * participant[0]
   * actor = Reference(Practitioner/54321) "Dr. Maria Sundström"
   * status = #accepted
