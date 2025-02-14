@@ -11,7 +11,7 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
   * timing 1..1 MS
   * doseAndRate 1..1 MS
 
-Instance: blood-pressure-med
+Instance: medicationstatement-blood-pressure
 InstanceOf: NordicMedicationStatement
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
@@ -28,7 +28,7 @@ InstanceOf: NordicMedicationStatement
     * periodUnit = #d
   * doseAndRate.doseQuantity = 10 'mg' "mg"
 
-Instance: diabetes-med
+Instance: medicationstatement-diabetes
 InstanceOf: NordicMedicationStatement
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
@@ -45,7 +45,7 @@ InstanceOf: NordicMedicationStatement
     * periodUnit = #d
   * doseAndRate.doseQuantity = 500 'mg' "mg"
 
-Instance: cholesterol-med
+Instance: medicationstatement-cholesterol
 InstanceOf: NordicMedicationStatement
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded

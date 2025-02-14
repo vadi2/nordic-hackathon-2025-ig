@@ -25,79 +25,9 @@
     "resource": [
       {
         "reference": {
-          "reference": "Observation/blood-pressure"
+          "reference": "Appointment/appointment-example"
         },
-        "name": "blood-pressure",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicObservation"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/blood-pressure-med"
-        },
-        "name": "blood-pressure-med",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicMedicationStatement"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Observation/bmi"
-        },
-        "name": "bmi",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicObservation"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/cholesterol-med"
-        },
-        "name": "cholesterol-med",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicMedicationStatement"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "MedicationStatement/diabetes-med"
-        },
-        "name": "diabetes-med",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicMedicationStatement"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Observation/hba1c"
-        },
-        "name": "hba1c",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicObservation"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Observation/lipids"
-        },
-        "name": "lipids",
-        "isExample": true,
-        "profile": [
-          "http://example.org/StructureDefinition/NordicObservation"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "Appointment/nordic-appointment-example"
-        },
-        "name": "nordic-appointment-example",
+        "name": "appointment-example",
         "isExample": true,
         "profile": [
           "http://example.org/StructureDefinition/NordicAppointment"
@@ -105,9 +35,9 @@
       },
       {
         "reference": {
-          "reference": "Appointment/nordic-appointment-example-3"
+          "reference": "Appointment/appointment-example-2"
         },
-        "name": "nordic-appointment-example-3",
+        "name": "appointment-example-2",
         "isExample": true,
         "profile": [
           "http://example.org/StructureDefinition/NordicAppointment"
@@ -115,12 +45,42 @@
       },
       {
         "reference": {
-          "reference": "Appointment/nordic-appointment-home-visit"
+          "reference": "Appointment/appointment-home-visit"
         },
-        "name": "nordic-appointment-home-visit",
+        "name": "appointment-home-visit",
         "isExample": true,
         "profile": [
           "http://example.org/StructureDefinition/NordicAppointment"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/medicationstatement-blood-pressure"
+        },
+        "name": "medicationstatement-blood-pressure",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicMedicationStatement"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/medicationstatement-cholesterol"
+        },
+        "name": "medicationstatement-cholesterol",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicMedicationStatement"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/medicationstatement-diabetes"
+        },
+        "name": "medicationstatement-diabetes",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicMedicationStatement"
         ]
       },
       {
@@ -146,6 +106,46 @@
         "name": "NordicObservation",
         "description": "An observation profile for the Nordic Hackathon 2025",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-blood-pressure"
+        },
+        "name": "observation-blood-pressure",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-bmi"
+        },
+        "name": "observation-bmi",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-hba1c"
+        },
+        "name": "observation-hba1c",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-lipids"
+        },
+        "name": "observation-lipids",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
       }
     ],
     "page": {

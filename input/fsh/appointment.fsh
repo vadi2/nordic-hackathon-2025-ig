@@ -10,7 +10,7 @@ Description: "An appointment profile for the Nordic Hackathon 2025"
 * serviceCategory 0..1 MS
 * participant 1..* MS
 
-Instance: nordic-appointment-example
+Instance: appointment-example
 InstanceOf: NordicAppointment
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)
@@ -30,7 +30,7 @@ Usage: #example
   * actor = Reference(Location/Stockholm-Clinic) "Stockholm Health Clinic"
   * status = #accepted
 
-Instance: nordic-appointment-example-3
+Instance: appointment-example-2
 InstanceOf: NordicAppointment
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)
@@ -50,7 +50,7 @@ Usage: #example
   * actor = Reference(Location/Uppsala-Cardiology-Clinic) "Uppsala Cardiology Clinic"
   * status = #accepted
 
-Instance: nordic-appointment-home-visit
+Instance: appointment-home-visit
 InstanceOf: NordicAppointment
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)

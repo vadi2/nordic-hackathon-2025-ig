@@ -8,7 +8,8 @@ Description: "An observation profile for the Nordic Hackathon 2025"
 * category MS
 * code 1..1 MS
 * effectiveDateTime 1..1 MS
-* valueQuantity 1..1 MS
+* valueQuantity MS
+* component MS
 
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
@@ -16,8 +17,8 @@ Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-
 Alias: $sct = http://snomed.info/sct
 Alias: $clinical-codes = http://acme.org/devices/clinical-codes
 
-Instance: blood-pressure
-InstanceOf: Observationvitalsigns
+Instance: observation-blood-pressure
+InstanceOf: NordicObservation
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -41,7 +42,7 @@ Usage: #example
   * interpretation = $v3-ObservationInterpretation#L "low"
     * text = "Below low normal"
 
-Instance: hba1c
+Instance: observation-hba1c
 InstanceOf: NordicObservation
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -50,7 +51,7 @@ InstanceOf: NordicObservation
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 7.5 '%' "%"
 
-Instance: lipids
+Instance: observation-lipids
 InstanceOf: NordicObservation
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -59,10 +60,11 @@ InstanceOf: NordicObservation
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 5.2 'mmol/L' "mmol/L"
 
-Instance: bmi
+Instance: observation-bmi
 InstanceOf: NordicObservation
 * meta.profile = Canonical(NordicObservation)
 * status = #final
+* category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
