@@ -11,7 +11,7 @@ Description: "An observation profile for the Nordic Hackathon 2025"
 * valueQuantity 1..1 MS
 
 Instance: blood-pressure
-InstanceOf: Observation
+InstanceOf: NordicObservation
 Usage: #inline
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
@@ -21,7 +21,7 @@ Usage: #inline
 * valueQuantity = 145 'mm[Hg]' "mmHg"
 
 Instance: hba1c
-InstanceOf: Observation
+InstanceOf: NordicObservation
 Usage: #inline
 * status = #final
 * code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"
@@ -30,7 +30,7 @@ Usage: #inline
 * valueQuantity = 7.5 '%' "%"
 
 Instance: lipids
-InstanceOf: Observation
+InstanceOf: NordicObservation
 Usage: #inline
 * status = #final
 * code = $loinc#2093-3 "Cholesterol in Blood"
@@ -39,7 +39,7 @@ Usage: #inline
 * valueQuantity = 5.2 'mmol/L' "mmol/L"
 
 Instance: bmi
-InstanceOf: Observation
+InstanceOf: NordicObservation
 Usage: #inline
 * status = #final
 * code = $loinc#39156-5 "Body Mass Index"

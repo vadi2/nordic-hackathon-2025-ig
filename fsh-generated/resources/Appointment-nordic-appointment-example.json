@@ -3,6 +3,7 @@
   "id": "nordic-appointment-example",
   "meta": {
     "profile": [
+      "http://example.org/StructureDefinition/NordicAppointment",
       "http://example.org/fhir/StructureDefinition/NordicAppointment"
     ]
   },

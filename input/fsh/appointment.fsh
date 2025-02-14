@@ -11,7 +11,7 @@ Description: "An appointment profile for the Nordic Hackathon 2025"
 * participant 1..* MS
 
 Instance: nordic-appointment-example
-InstanceOf: Appointment
+InstanceOf: NordicAppointment
 Usage: #example
 * meta.profile = "http://example.org/fhir/StructureDefinition/NordicAppointment"
 * created = "2025-02-14T08:30:00Z"
@@ -31,7 +31,7 @@ Usage: #example
   * status = #accepted
 
 Instance: nordic-appointment-example-3
-InstanceOf: Appointment
+InstanceOf: NordicAppointment
 Usage: #example
 * meta.profile = "http://example.org/fhir/StructureDefinition/NordicAppointment"
 * created = "2025-02-14T11:00:00Z"
@@ -51,7 +51,7 @@ Usage: #example
   * status = #accepted
 
 Instance: nordic-appointment-home-visit
-InstanceOf: Appointment
+InstanceOf: NordicAppointment
 Usage: #example
 * meta.profile = "http://example.org/fhir/StructureDefinition/NordicAppointment"
 * created = "2025-02-14T13:00:00Z"

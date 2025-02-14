@@ -28,21 +28,30 @@
           "reference": "Appointment/nordic-appointment-example"
         },
         "name": "nordic-appointment-example",
-        "isExample": true
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicAppointment"
+        ]
       },
       {
         "reference": {
           "reference": "Appointment/nordic-appointment-example-3"
         },
         "name": "nordic-appointment-example-3",
-        "isExample": true
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicAppointment"
+        ]
       },
       {
         "reference": {
           "reference": "Appointment/nordic-appointment-home-visit"
         },
         "name": "nordic-appointment-home-visit",
-        "isExample": true
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicAppointment"
+        ]
       },
       {
         "reference": {

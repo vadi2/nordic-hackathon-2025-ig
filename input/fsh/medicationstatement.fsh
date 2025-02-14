@@ -12,7 +12,7 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
   * doseAndRate 1..1 MS
 
 Instance: blood-pressure-med
-InstanceOf: MedicationStatement
+InstanceOf: NordicMedicationStatement
 Usage: #inline
 * status = #active
 * medication.concept.coding
@@ -29,7 +29,7 @@ Usage: #inline
   * doseAndRate.doseQuantity = 10 'mg' "mg"
 
 Instance: diabetes-med
-InstanceOf: MedicationStatement
+InstanceOf: NordicMedicationStatement
 Usage: #inline
 * status = #active
 * medication.concept.coding
@@ -46,7 +46,7 @@ Usage: #inline
   * doseAndRate.doseQuantity = 500 'mg' "mg"
 
 Instance: cholesterol-med
-InstanceOf: MedicationStatement
+InstanceOf: NordicMedicationStatement
 Usage: #inline
 * status = #active
 * medication.concept.coding
