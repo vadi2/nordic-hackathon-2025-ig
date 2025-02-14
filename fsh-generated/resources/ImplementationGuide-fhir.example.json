@@ -25,6 +25,76 @@
     "resource": [
       {
         "reference": {
+          "reference": "Observation/blood-pressure"
+        },
+        "name": "blood-pressure",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/blood-pressure-med"
+        },
+        "name": "blood-pressure-med",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicMedicationStatement"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/bmi"
+        },
+        "name": "bmi",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/cholesterol-med"
+        },
+        "name": "cholesterol-med",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicMedicationStatement"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/diabetes-med"
+        },
+        "name": "diabetes-med",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicMedicationStatement"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/hba1c"
+        },
+        "name": "hba1c",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/lipids"
+        },
+        "name": "lipids",
+        "isExample": true,
+        "profile": [
+          "http://example.org/StructureDefinition/NordicObservation"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Appointment/nordic-appointment-example"
         },
         "name": "nordic-appointment-example",

@@ -1,3 +1,10 @@
+[blood-pressure]: Observation-blood-pressure.html
+[blood-pressure-med]: MedicationStatement-blood-pressure-med.html
+[bmi]: Observation-bmi.html
+[cholesterol-med]: MedicationStatement-cholesterol-med.html
+[diabetes-med]: MedicationStatement-diabetes-med.html
+[hba1c]: Observation-hba1c.html
+[lipids]: Observation-lipids.html
 [nordic-appointment-example]: Appointment-nordic-appointment-example.html
 [nordic-appointment-example-3]: Appointment-nordic-appointment-example-3.html
 [nordic-appointment-home-visit]: Appointment-nordic-appointment-home-visit.html
