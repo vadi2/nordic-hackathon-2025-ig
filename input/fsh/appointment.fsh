@@ -13,7 +13,7 @@ Description: "An appointment profile for the Nordic Hackathon 2025"
 Instance: nordic-appointment-example
 InstanceOf: NordicAppointment
 Usage: #example
-* meta.profile = "http://example.org/fhir/StructureDefinition/NordicAppointment"
+* meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T08:30:00Z"
 * status = #booked
 * subject = Reference(Patient/12345) "Anders Svensson"
@@ -33,7 +33,7 @@ Usage: #example
 Instance: nordic-appointment-example-3
 InstanceOf: NordicAppointment
 Usage: #example
-* meta.profile = "http://example.org/fhir/StructureDefinition/NordicAppointment"
+* meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T11:00:00Z"
 * status = #booked
 * subject = Reference(Patient/67890) "Arne Johansson"
@@ -53,7 +53,7 @@ Usage: #example
 Instance: nordic-appointment-home-visit
 InstanceOf: NordicAppointment
 Usage: #example
-* meta.profile = "http://example.org/fhir/StructureDefinition/NordicAppointment"
+* meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T13:00:00Z"
 * status = #booked
 * subject = Reference(Patient/67890) "Arne Johansson"

@@ -14,6 +14,7 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
 Instance: blood-pressure-med
 InstanceOf: NordicMedicationStatement
 Usage: #inline
+* meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
 * medication.concept.coding
   * system = "http://www.whocc.no/atc"
@@ -31,6 +32,7 @@ Usage: #inline
 Instance: diabetes-med
 InstanceOf: NordicMedicationStatement
 Usage: #inline
+* meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
 * medication.concept.coding
   * system = "http://www.whocc.no/atc"
@@ -48,6 +50,7 @@ Usage: #inline
 Instance: cholesterol-med
 InstanceOf: NordicMedicationStatement
 Usage: #inline
+* meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
 * medication.concept.coding
   * system = "http://www.whocc.no/atc"

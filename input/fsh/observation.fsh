@@ -13,6 +13,7 @@ Description: "An observation profile for the Nordic Hackathon 2025"
 Instance: blood-pressure
 InstanceOf: NordicObservation
 Usage: #inline
+* meta.profile = Canonical(NordicObservation)
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure"
@@ -23,6 +24,7 @@ Usage: #inline
 Instance: hba1c
 InstanceOf: NordicObservation
 Usage: #inline
+* meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"
 * subject = Reference(Patient/67890) "Arne Johansson"
@@ -32,6 +34,7 @@ Usage: #inline
 Instance: lipids
 InstanceOf: NordicObservation
 Usage: #inline
+* meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#2093-3 "Cholesterol in Blood"
 * subject = Reference(Patient/67890) "Arne Johansson"
@@ -41,6 +44,7 @@ Usage: #inline
 Instance: bmi
 InstanceOf: NordicObservation
 Usage: #inline
+* meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#39156-5 "Body Mass Index"
 * subject = Reference(Patient/67890) "Arne Johansson"

@@ -3,8 +3,7 @@
   "id": "nordic-appointment-home-visit",
   "meta": {
     "profile": [
-      "http://example.org/StructureDefinition/NordicAppointment",
-      "http://example.org/fhir/StructureDefinition/NordicAppointment"
+      "http://example.org/StructureDefinition/NordicAppointment"
     ]
   },
   "serviceCategory": [
