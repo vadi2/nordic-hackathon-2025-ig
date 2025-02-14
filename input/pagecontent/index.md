@@ -9,9 +9,7 @@ The IG provides FHIR profiles and resources to enhance data interoperability bet
 ## Contents
 
 - **Profiles**: Customized FHIR profiles for patient data, care plans, and service delivery. The profiles are 'shallow' and do not go into the full details for the purposes of this Hackathon.
-- **Examples**: Sample FHIR resources demonstrating the profiles in use.
-
-See [artifacts](artifacts.html) for the generated IG artifacts.
+- **Examples**: Sample FHIR resources demonstrating the profiles in use ([page](https://build.fhir.org/ig/vadi2/nordic-hackathon-2025-ig/branches/main/artifacts.html), [zip](https://build.fhir.org/ig/vadi2/nordic-hackathon-2025-ig/branches/main/examples.json.zip))
 
 ## Usage
 
