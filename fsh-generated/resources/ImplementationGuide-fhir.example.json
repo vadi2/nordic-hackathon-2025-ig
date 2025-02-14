@@ -1,0 +1,87 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.example",
+  "url": "http://example.org/ImplementationGuide/fhir.example",
+  "version": "0.1.0",
+  "name": "NordicHackathon2025",
+  "status": "draft",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.example",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Appointment/nordic-appointment-example"
+        },
+        "name": "nordic-appointment-example",
+        "isExample": true
+      },
+      {
+        "reference": {
+          "reference": "Appointment/nordic-appointment-example-3"
+        },
+        "name": "nordic-appointment-example-3",
+        "isExample": true
+      },
+      {
+        "reference": {
+          "reference": "Appointment/nordic-appointment-home-visit"
+        },
+        "name": "nordic-appointment-home-visit",
+        "isExample": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NordicAppointment"
+        },
+        "name": "NordicAppointment",
+        "description": "A sample appointment.",
+        "isExample": false
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2025+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "ci-build"
+      }
+    ]
+  }
+}
