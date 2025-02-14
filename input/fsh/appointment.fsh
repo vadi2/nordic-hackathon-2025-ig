@@ -69,3 +69,24 @@ Usage: #example
 * participant[+]
   * actor = Reference(Location/Home-Visit) "Arne Johansson's Home"
   * status = #accepted
+
+
+Instance: appointment-home-care-wound-treatment
+InstanceOf: NordicAppointment
+Usage: #example
+* meta.profile = Canonical(NordicAppointment)
+* created = "2025-02-14T14:00:00Z"
+* status = #booked
+* subject = Reference(Patient/67890) "Arne Johansson"
+* start = "2025-03-25T08:00:00+01:00"
+* end = "2025-03-25T08:30:00+01:00"
+* serviceCategory = $service-category#42 "Home Care"
+* participant[0]
+  * actor = Reference(Practitioner/45678) "Nurse Lisa Andersson"
+  * status = #accepted
+* participant[+]
+  * actor = Reference(Patient/67890) "Arne Johansson"
+  * status = #accepted
+* participant[+].
+  * actor = Reference(Location/Home-Visit) "Arne Johansson's Home"
+  * status = #accepted
