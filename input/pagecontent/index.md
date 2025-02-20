@@ -26,6 +26,8 @@ Evondos can produce this data: medicationdispense's to report that medication ha
 
 Medrave and Inera can consume the above data and visualise it to different actors - Medrave to the healthcare providers and Inera to secondary actors such as relatives, etc.
 
+Webdoc can also consume the medicationdispense data from Evondos to show that the medication has been taken or missed.
+
 ### Usage
 
 Implementers can use this IG to standardize data exchange in health and social care settings, facilitating coordinated and efficient patient care.
