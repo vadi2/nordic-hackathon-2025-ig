@@ -4,7 +4,7 @@ Id: NordicMedicationStatement
 Title: "NordicMedicationStatement"
 Description: "A medicationstatement profile for the Nordic Hackathon 2025"
 * status MS
-* medication 1..1 MS
+* medicationCodeableConcept 1..1 MS
 * subject 1..1 MS
 * effectiveDateTime 1..1 MS
 * dosage 1..1 MS
@@ -17,7 +17,7 @@ InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
-* medication.concept
+* medicationCodeableConcept
   * coding[0]
     * system = "http://www.whocc.no/atc"
     * code = #R03AL08
@@ -40,7 +40,7 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
 * effectiveDateTime = "2025-12-09"
-* medication.concept
+* medicationCodeableConcept
   * coding[+]
     * system = "http://www.whocc.no/atc"
     * code = #A10BA02
@@ -63,7 +63,7 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
 * effectiveDateTime = "2022-10-11"
-* medication.concept
+* medicationCodeableConcept
   * coding
     * system = "http://www.whocc.no/atc"
     * code = #C10AA01
@@ -86,7 +86,7 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
 * effectiveDateTime = "2022-04-20"
-* medication.concept
+* medicationCodeableConcept
   * coding[+]
     * system = "http://www.whocc.no/atc"
     * code = #A10BB12
@@ -109,7 +109,7 @@ Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #recorded
 * effectiveDateTime = "2025-03-21"
-* medication.concept
+* medicationCodeableConcept
   * coding[+]
     * system = "http://www.whocc.no/atc"
     * code = #C09BA02

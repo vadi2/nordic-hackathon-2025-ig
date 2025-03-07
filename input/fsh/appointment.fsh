@@ -4,7 +4,6 @@ Profile: NordicAppointment
 Parent: Appointment
 Description: "An appointment profile for the Nordic Hackathon 2025"
 * created 1..1 MS
-* subject 0..1 MS
 * start 1..1 MS
 * end 1..1 MS
 * serviceCategory 0..1 MS
@@ -16,7 +15,6 @@ Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T08:30:00Z"
 * status = #booked
-* subject = Reference(Patient/12345) "Anders Svensson"
 * start = "2025-03-01T09:00:00+01:00"
 * end = "2025-03-01T09:30:00+01:00"
 * serviceCategory = $service-category#17 "General Practice"
@@ -36,7 +34,6 @@ Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T11:00:00Z"
 * status = #booked
-* subject = Reference(Patient/67890) "Arne Johansson"
 * start = "2025-03-10T10:00:00+01:00"
 * end = "2025-03-10T10:45:00+01:00"
 * serviceCategory = $service-category#27 "Specialist Medical"
@@ -56,7 +53,6 @@ Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T13:00:00Z"
 * status = #booked
-* subject = Reference(Patient/67890) "Arne Johansson"
 * start = "2025-03-20T10:00:00+01:00"
 * end = "2025-03-20T11:00:00+01:00"
 * serviceCategory = $service-category#7 "Community Health Care"
@@ -77,7 +73,6 @@ Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T14:00:00Z"
 * status = #booked
-* subject = Reference(Patient/67890) "Arne Johansson"
 * start = "2025-03-25T08:00:00+01:00"
 * end = "2025-03-25T08:30:00+01:00"
 * serviceCategory = $service-category#7 "Community Health Care"
