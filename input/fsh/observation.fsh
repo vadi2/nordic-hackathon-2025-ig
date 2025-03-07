@@ -23,7 +23,7 @@ Usage: #example
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
   * text = "Blood pressure systolic & diastolic"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2012-09-17"
 * bodySite = $sct#368209003 "Right arm"
 * component[0]
@@ -79,7 +79,7 @@ Usage: #example
 * code = $loinc#8302-2 "Body height"
 * subject = Reference(Patient/67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
-* valueQuantity = 1.75 'm' "m"
+* valueQuantity = 175 'cm' "cm"
 
 Instance: observation-weight
 InstanceOf: NordicObservation

@@ -19,10 +19,10 @@ Usage: #example
 * end = "2025-03-01T09:30:00+01:00"
 * serviceCategory = $service-category#17 "General Practice"
 * participant[0]
-  * actor = Reference(Practitioner/67890) "Dr. Karin Lindström"
+  * actor = Reference(Practitioner/67891) "Dr. Karin Lindström"
   * status = #accepted
 * participant[+]
-  * actor = Reference(Patient/12345) "Anders Svensson"
+  * actor = Reference(Patient/67890) "Arne Johansson"
   * status = #accepted
 * participant[+]
   * actor = Reference(Location/Stockholm-Clinic) "Stockholm Health Clinic"
