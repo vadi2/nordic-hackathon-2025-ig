@@ -18,17 +18,18 @@ The following systems are part of the FHIR group:
 * Webdoc
 * Inera
 * Evondos
+* Doctrin
 
 ### Data flow
 Webdoc can produce this data: planned visits (scheduled appointments), observations (hypertension, diabetes, all deceases arne has, blood pressure, hba1c, lipids, BMI), and medications Arne takes. 
 
 Evondos can produce this data: medicationdispense's to report that medication has been taken or missed.
 
-Medrave and Inera can consume the above data and visualise it to different actors - Medrave to the healthcare providers and Inera to secondary actors such as relatives, etc.
+Doctrin can produce appointments and self-reported observations. 
+
+Medrave and Inera can consume the above data and visualise it to different actors - Medrave to the healthcare providers and Inera to secondary actors such as relatives, etc. Medrave would like to use FHIR Subscriptions to be notified of data as it comes in realtime.
 
 Webdoc can also consume the medicationdispense data from Evondos to show that the medication has been taken or missed.
-
-<img src="user-scenario.png" alt="user-scenario" style="width:100%;"/>
 
 ### Usage
 
