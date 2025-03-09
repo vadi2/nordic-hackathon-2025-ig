@@ -5,8 +5,6 @@ Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-
 Instance: 67891
 InstanceOf: Practitioner
 Usage: #example
-* identifier.system = "http://example.org/nordic-healthcare/practitioners"
-* identifier.value = "67890"
 * active = true
 * name.family = "Lindström"
 * name.given = "Karin"
@@ -73,7 +71,7 @@ Usage: #example
 * name.prefix = "Nurse"
 * name.text = "Nurse Lisa Andersson"
 * telecom[0].system = #phone
-* telecom[=].value = "+46704567890"
+* telecom[=].value = "+46704567840"
 * telecom[=].use = #work
 * telecom[+].system = #email
 * telecom[=].value = "lisa.andersson@example.org"
@@ -82,13 +80,9 @@ Usage: #example
 * qualification.code = $v2-0360#RN "Registered Nurse"
 * qualification.code.text = "Registered Nurse"
 
-Instance: 67890
+Instance: arne-67890
 InstanceOf: Patient
 Usage: #example
-* identifier[0].system = "http://example.org/nordic-healthcare/patients"
-* identifier[=].value = "67890"
-* identifier[+].system = "http://example.org/nordic-healthcare/national-id"
-* identifier[=].value = "19650315-1234"
 * active = true
 * name.family = "Johansson"
 * name.given = "Arne"
@@ -124,7 +118,7 @@ Usage: #example
 * type = $v3-RoleCode#HOSP "Hospital"
 * type.text = "Hospital"
 * telecom[0].system = #phone
-* telecom[=].value = "+4684567890"
+* telecom[=].value = "+4684567190"
 * telecom[=].use = #work
 * telecom[+].system = #email
 * telecom[=].value = "info@stockholmclinic.example.org"

@@ -26,7 +26,7 @@ Usage: #example
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20190917000010
 * effectiveDateTime = "2025-03-20"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * dosage
   * text = "2 puffs twice daily"
   * timing.repeat
@@ -48,7 +48,7 @@ Usage: #example
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20200601000056
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * dosage
   * text = "500 mg twice daily"
   * timing.repeat
@@ -71,7 +71,7 @@ Usage: #example
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20080219000026
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * dosage
   * text = "20 mg once daily at bedtime"
   * timing.repeat
@@ -94,7 +94,7 @@ Usage: #example
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20050701000261
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * dosage
   * text = "2 mg once daily with breakfast"
   * timing.repeat
@@ -117,7 +117,7 @@ Usage: #example
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20201110100183
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * dosage
   * text = "10 mg once daily"
   * timing.repeat

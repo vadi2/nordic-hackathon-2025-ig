@@ -23,7 +23,7 @@ Usage: #example
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
   * text = "Blood pressure systolic & diastolic"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2012-09-17"
 * bodySite = $sct#368209003 "Right arm"
 * component[0]
@@ -45,7 +45,7 @@ Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#4548-4 "Hemoglobin A1c/Hemoglobin.total in Blood"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 52 'mmol/mol' "mmol/mol"
 
@@ -55,7 +55,7 @@ Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#2093-3 "Cholesterol, Blood"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 5.2 'mmol/L' "mmol/L"
 
@@ -66,7 +66,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 18.2 'kg/m2' "kg/m2"
 
@@ -77,7 +77,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#8302-2 "Body height"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 175 'cm' "cm"
 
@@ -88,7 +88,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#29463-7 "Body weight"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 55.74 'kg' "kg"
 
@@ -98,7 +98,7 @@ Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#33863-2 "Cystatin C [Mass/volume] in Serum or Plasma"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 1.2 'mg/L' "mg/L"
 
@@ -108,7 +108,7 @@ Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#33914-3 "GFR/1.73 Sq M.predicted, Blood"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 50 'mL/min' "ml/min"
 
@@ -118,7 +118,7 @@ Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 1.9 'mmol/L' "mmol/L"
 
@@ -128,6 +128,6 @@ Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
 * code = $loinc#20150-9 "FEV1"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 83 '%' "%"

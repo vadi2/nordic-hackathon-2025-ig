@@ -22,7 +22,7 @@ Usage: #example
   * actor = Reference(Practitioner/67891) "Dr. Karin Lindström"
   * status = #accepted
 * participant[+]
-  * actor = Reference(Patient/67890) "Arne Johansson"
+  * actor = Reference(Patient/arne-67890) "Arne Johansson"
   * status = #accepted
 * participant[+]
   * actor = Reference(Location/Stockholm-Clinic) "Stockholm Health Clinic"
@@ -41,7 +41,7 @@ Usage: #example
   * actor = Reference(Practitioner/54321) "Dr. Maria Sundström"
   * status = #accepted
 * participant[+]
-  * actor = Reference(Patient/67890) "Arne Johansson"
+  * actor = Reference(Patient/arne-67890) "Arne Johansson"
   * status = #accepted
 * participant[+]
   * actor = Reference(Location/Uppsala-Cardiology-Clinic) "Uppsala Cardiology Clinic"
@@ -60,7 +60,7 @@ Usage: #example
   * actor = Reference(Practitioner/55555) "Nurse Ingrid Karlsson"
   * status = #accepted
 * participant[+]
-  * actor = Reference(Patient/67890) "Arne Johansson"
+  * actor = Reference(Patient/arne-67890) "Arne Johansson"
   * status = #accepted
 * participant[+]
   * actor = Reference(Location/Home-Visit) "Arne Johansson's Home"
@@ -80,7 +80,7 @@ Usage: #example
   * actor = Reference(Practitioner/45678) "Nurse Lisa Andersson"
   * status = #accepted
 * participant[+]
-  * actor = Reference(Patient/67890) "Arne Johansson"
+  * actor = Reference(Patient/arne-67890) "Arne Johansson"
   * status = #accepted
 * participant[+].
   * actor = Reference(Location/Home-Visit) "Arne Johansson's Home"

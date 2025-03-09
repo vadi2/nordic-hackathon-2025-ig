@@ -15,39 +15,39 @@ InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#E11.7 "Type 2 diabetes mellitus : With multiple complications"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 
 Instance: condition-hypertension
 InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#I11 "Hypertensive heart disease"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 
 Instance: condition-copd
 InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#J44.9 "Chronic obstructive pulmonary disease, unspecified"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 
 Instance: condition-coronary-heart-disease
 InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#I25.2 "Old myocardial infarction"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 
 Instance: condition-leg-ulcers
 InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#L98.4 "Chronic ulcer of skin, not elsewhere classified"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
 
 Instance: condition-other-emphysema
 InstanceOf: NordicCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#J43.8 "Other emphysema"
-* subject = Reference(Patient/67890) "Arne Johansson"
+* subject = Reference(Patient/arne-67890) "Arne Johansson"
