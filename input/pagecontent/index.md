@@ -31,6 +31,8 @@ Medrave and Inera can consume the above data and visualise it to different actor
 
 Webdoc can also consume the medicationdispense data from Evondos to show that the medication has been taken or missed.
 
+<img src="user-scenario.png" alt="user-scenario" style="width:100%;"/>
+
 ### Usage
 
 Implementers can use this IG to standardize data exchange in health and social care settings, facilitating coordinated and efficient patient care.
