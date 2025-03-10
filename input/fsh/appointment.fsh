@@ -19,7 +19,7 @@ Usage: #example
 * end = "2025-03-01T09:30:00+01:00"
 * serviceCategory = $service-category#17 "General Practice"
 * participant[0]
-  * actor = Reference(Practitioner/67891) "Dr. Karin Lindström"
+  * actor = Reference(Practitioner/karin-67891) "Dr. Karin Lindström"
   * status = #accepted
 * participant[+]
   * actor = Reference(Patient/arne-67890) "Arne Johansson"
@@ -38,7 +38,7 @@ Usage: #example
 * end = "2025-03-10T10:45:00+01:00"
 * serviceCategory = $service-category#27 "Specialist Medical"
 * participant[0]
-  * actor = Reference(Practitioner/54321) "Dr. Maria Sundström"
+  * actor = Reference(Practitioner/maria-54321) "Dr. Maria Sundström"
   * status = #accepted
 * participant[+]
   * actor = Reference(Patient/arne-67890) "Arne Johansson"
@@ -57,7 +57,7 @@ Usage: #example
 * end = "2025-03-20T11:00:00+01:00"
 * serviceCategory = $service-category#7 "Community Health Care"
 * participant[0]
-  * actor = Reference(Practitioner/55555) "Nurse Ingrid Karlsson"
+  * actor = Reference(Practitioner/ingrid-55555) "Nurse Ingrid Karlsson"
   * status = #accepted
 * participant[+]
   * actor = Reference(Patient/arne-67890) "Arne Johansson"
@@ -77,7 +77,7 @@ Usage: #example
 * end = "2025-03-25T08:30:00+01:00"
 * serviceCategory = $service-category#7 "Community Health Care"
 * participant[0]
-  * actor = Reference(Practitioner/45678) "Nurse Lisa Andersson"
+  * actor = Reference(Practitioner/lisa-45678) "Nurse Lisa Andersson"
   * status = #accepted
 * participant[+]
   * actor = Reference(Patient/arne-67890) "Arne Johansson"

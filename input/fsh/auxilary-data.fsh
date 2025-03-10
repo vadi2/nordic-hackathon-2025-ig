@@ -2,7 +2,7 @@ Alias: $v2-0360 = http://terminology.hl7.org/CodeSystem/v2-0360
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-physical-type
 
-Instance: 67891
+Instance: karin-67891
 InstanceOf: Practitioner
 Usage: #example
 * active = true
@@ -20,11 +20,9 @@ Usage: #example
 * qualification.code = $v2-0360#MD "Doctor of Medicine"
 * qualification.code.text = "Medical Doctor"
 
-Instance: 54321
+Instance: maria-54321
 InstanceOf: Practitioner
 Usage: #example
-* identifier.system = "http://example.org/nordic-healthcare/practitioners"
-* identifier.value = "54321"
 * active = true
 * name.family = "Sundström"
 * name.given = "Maria"
@@ -40,18 +38,16 @@ Usage: #example
 * qualification.code = $v2-0360#MD "Doctor of Medicine"
 * qualification.code.text = "Medical Doctor"
 
-Instance: 55555
+Instance: ingrid-55555
 InstanceOf: Practitioner
 Usage: #example
-* identifier.system = "http://example.org/nordic-healthcare/practitioners"
-* identifier.value = "55555"
 * active = true
 * name.family = "Karlsson"
 * name.given = "Ingrid"
 * name.prefix = "Nurse"
 * name.text = "Nurse Ingrid Karlsson"
 * telecom[0].system = #phone
-* telecom[=].value = "+46705555555"
+* telecom[=].value = "+46705215555"
 * telecom[=].use = #work
 * telecom[+].system = #email
 * telecom[=].value = "ingrid.karlsson@example.org"
@@ -60,18 +56,16 @@ Usage: #example
 * qualification.code = $v2-0360#RN "Registered Nurse"
 * qualification.code.text = "Registered Nurse"
 
-Instance: 45678
+Instance: lisa-45678
 InstanceOf: Practitioner
 Usage: #example
-* identifier.system = "http://example.org/nordic-healthcare/practitioners"
-* identifier.value = "45678"
 * active = true
 * name.family = "Andersson"
 * name.given = "Lisa"
 * name.prefix = "Nurse"
 * name.text = "Nurse Lisa Andersson"
 * telecom[0].system = #phone
-* telecom[=].value = "+46704567840"
+* telecom[=].value = "+4670lisa-4567840"
 * telecom[=].use = #work
 * telecom[+].system = #email
 * telecom[=].value = "lisa.andersson@example.org"
@@ -104,7 +98,7 @@ Usage: #example
 * communication.language = urn:ietf:bcp:47#sv "Swedish"
 * communication.language.text = "Swedish"
 * communication.preferred = true
-* generalPractitioner = Reference(Practitioner/54321) "Dr. Maria Sundström"
+* generalPractitioner = Reference(Practitioner/maria-54321) "Dr. Maria Sundström"
 
 Instance: Stockholm-Clinic
 InstanceOf: Location
