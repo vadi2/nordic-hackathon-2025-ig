@@ -4,6 +4,7 @@ Alias: $location-physical-type = http://terminology.hl7.org/CodeSystem/location-
 
 Instance: karin-67891
 InstanceOf: Practitioner
+Description: "General practitioner"
 Usage: #example
 * active = true
 * name.family = "Lindström"
@@ -22,6 +23,7 @@ Usage: #example
 
 Instance: maria-54321
 InstanceOf: Practitioner
+Description: "Cardiologist"
 Usage: #example
 * active = true
 * name.family = "Sundström"
@@ -40,6 +42,7 @@ Usage: #example
 
 Instance: ingrid-55555
 InstanceOf: Practitioner
+Description: "Nurse"
 Usage: #example
 * active = true
 * name.family = "Karlsson"
@@ -58,6 +61,7 @@ Usage: #example
 
 Instance: lisa-45678
 InstanceOf: Practitioner
+Description: "Nurse"
 Usage: #example
 * active = true
 * name.family = "Andersson"
@@ -76,6 +80,7 @@ Usage: #example
 
 Instance: arne-67890
 InstanceOf: Patient
+Description: "Arne - Hackathon patient"
 Usage: #example
 * active = true
 * name.family = "Johansson"
@@ -102,6 +107,7 @@ Usage: #example
 
 Instance: Stockholm-Clinic
 InstanceOf: Location
+Description: "Main health clinic in Stockholm"
 Usage: #example
 * identifier.system = "http://example.org/nordic-healthcare/locations"
 * identifier.value = "STHLM-CLINIC-001"
@@ -128,6 +134,7 @@ Usage: #example
 
 Instance: Uppsala-Cardiology-Clinic
 InstanceOf: Location
+Description: "Specialized cardiology clinic in Uppsala"
 Usage: #example
 * identifier.system = "http://example.org/nordic-healthcare/locations"
 * identifier.value = "UPP-CARDIO-001"
@@ -154,6 +161,7 @@ Usage: #example
 
 Instance: Home-Visit
 InstanceOf: Location
+Description: "Location representing home visits to patients"
 Usage: #example
 * identifier.system = "http://example.org/nordic-healthcare/locations"
 * identifier.value = "HOME-VISIT-TYPE"

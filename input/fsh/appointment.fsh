@@ -11,6 +11,7 @@ Description: "An appointment profile for the Nordic Hackathon 2025"
 
 Instance: appointment-example
 InstanceOf: NordicAppointment
+Description: "Annual physical examination"
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T08:30:00Z"
@@ -30,6 +31,7 @@ Usage: #example
 
 Instance: appointment-example-2
 InstanceOf: NordicAppointment
+Description: "Cardiology consultation"
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T11:00:00Z"
@@ -49,6 +51,7 @@ Usage: #example
 
 Instance: appointment-home-visit
 InstanceOf: NordicAppointment
+Description: "Home visit"
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T13:00:00Z"
@@ -69,6 +72,7 @@ Usage: #example
 
 Instance: appointment-home-care-wound-treatment
 InstanceOf: NordicAppointment
+Description: "Home care wound treatment"
 Usage: #example
 * meta.profile = Canonical(NordicAppointment)
 * created = "2025-02-14T14:00:00Z"

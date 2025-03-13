@@ -17,6 +17,7 @@ Description: "An observation profile for the Nordic Hackathon 2025"
 
 Instance: observation-blood-pressure
 InstanceOf: NordicObservation
+Description: "Blood pressure"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -41,6 +42,7 @@ Usage: #example
 
 Instance: observation-hba1c
 InstanceOf: NordicObservation
+Description: "Hemoglobin A1c"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -51,6 +53,7 @@ Usage: #example
 
 Instance: observation-lipids
 InstanceOf: NordicObservation
+Description: "Lipid panel"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -61,6 +64,7 @@ Usage: #example
 
 Instance: observation-bmi
 InstanceOf: NordicObservation
+Description: "Body mass index"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -72,6 +76,7 @@ Usage: #example
 
 Instance: observation-height
 InstanceOf: NordicObservation
+Description: "Body height"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -83,6 +88,7 @@ Usage: #example
 
 Instance: observation-weight
 InstanceOf: NordicObservation
+Description: "Body weight"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -94,6 +100,7 @@ Usage: #example
 
 Instance: observation-cystatin-c
 InstanceOf: NordicObservation
+Description: "Cystatin C"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -104,16 +111,18 @@ Usage: #example
 
 Instance: observation-kidney-function
 InstanceOf: NordicObservation
+Description: "Kidney function"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
-* code = $loinc#33914-3 "GFR/1.73 Sq M.predicted, Blood"
+* code = $loinc#33914-3 "GFR, Blood"
 * subject = Reference(Patient/arne-67890) "Arne Johansson"
 * effectiveDateTime = "2025-03-20T10:30:00+01:00"
 * valueQuantity = 50 'mL/min' "ml/min"
 
 Instance: observation-triglycerides
 InstanceOf: NordicObservation
+Description: "Triglycerides"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final
@@ -124,6 +133,7 @@ Usage: #example
 
 Instance: observation-fev1-after-bd
 InstanceOf: NordicObservation
+Description: "Forced expiratory volume in 1 second"
 Usage: #example
 * meta.profile = Canonical(NordicObservation)
 * status = #final

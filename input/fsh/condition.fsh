@@ -12,6 +12,7 @@ Description: "A condition profile for the Nordic Hackathon 2025"
 
 Instance: condition-diabetes
 InstanceOf: NordicCondition
+Description: "Type 2 diabetes mellitus"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#E11.7 "Type 2 diabetes mellitus : With multiple complications"
@@ -19,6 +20,7 @@ Usage: #example
 
 Instance: condition-hypertension
 InstanceOf: NordicCondition
+Description: "Hypertension"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#I11 "Hypertensive heart disease"
@@ -26,6 +28,7 @@ Usage: #example
 
 Instance: condition-copd
 InstanceOf: NordicCondition
+Description: "Chronic obstructive pulmonary disease"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#J44.9 "Chronic obstructive pulmonary disease, unspecified"
@@ -33,6 +36,7 @@ Usage: #example
 
 Instance: condition-coronary-heart-disease
 InstanceOf: NordicCondition
+Description: "Coronary heart disease"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#I25.2 "Old myocardial infarction"
@@ -40,6 +44,7 @@ Usage: #example
 
 Instance: condition-leg-ulcers
 InstanceOf: NordicCondition
+Description: "Leg ulcers"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#L98.4 "Chronic ulcer of skin, not elsewhere classified"
@@ -47,6 +52,7 @@ Usage: #example
 
 Instance: condition-other-emphysema
 InstanceOf: NordicCondition
+Description: "Other emphysema"
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * code = $icd-10#J43.8 "Other emphysema"

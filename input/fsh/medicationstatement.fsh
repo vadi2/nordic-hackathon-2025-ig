@@ -6,7 +6,7 @@ Description: "A medicationstatement profile for the Nordic Hackathon 2025"
 * status MS
 * medicationCodeableConcept 1..1 MS
 * subject 1..1 MS
-* effectiveDateTime 1..1 MS
+* effectivePeriod 1..1 MS
 * dosage 1..1 MS
   * text 1..1 MS
   * timing 1..1 MS
@@ -25,7 +25,9 @@ Usage: #example
   * coding[+]
     * system = "http://electronichealth.se/fhir/NamingSystem/nplpackid"
     * code = #20190917000010
-* effectiveDateTime = "2025-03-20"
+* effectivePeriod
+  * start = "2025-03-20"
+  * end = "2025-03-26"
 * subject = Reference(Patient/arne-67890) "Arne Johansson"
 * dosage
   * text = "2 puffs twice daily"
@@ -39,7 +41,9 @@ InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
-* effectiveDateTime = "2025-12-09"
+* effectivePeriod
+  * start = "2025-12-09"
+  * end = "2025-12-15"
 * medicationCodeableConcept
   * coding[+]
     * system = "http://www.whocc.no/atc"
@@ -62,7 +66,9 @@ InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
-* effectiveDateTime = "2022-10-11"
+* effectivePeriod
+  * start = "2022-10-11"
+  * end = "2022-10-17"
 * medicationCodeableConcept
   * coding
     * system = "http://www.whocc.no/atc"
@@ -85,7 +91,9 @@ InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
-* effectiveDateTime = "2022-04-20"
+* effectivePeriod
+  * start = "2022-04-20"
+  * end = "2022-07-26"
 * medicationCodeableConcept
   * coding[+]
     * system = "http://www.whocc.no/atc"
@@ -108,7 +116,9 @@ InstanceOf: NordicMedicationStatement
 Usage: #example
 * meta.profile = Canonical(NordicMedicationStatement)
 * status = #active
-* effectiveDateTime = "2025-03-21"
+* effectivePeriod
+  * start = "2025-03-21"
+  * end = "2025-03-30"
 * medicationCodeableConcept
   * coding[+]
     * system = "http://www.whocc.no/atc"
