@@ -83,22 +83,25 @@ InstanceOf: Patient
 Description: "Arne - Hackathon patient"
 Usage: #example
 * active = true
-* name.family = "Johansson"
+* identifier
+  * system = "http://electronichealth.se/identifier/personnummer"
+  * value = "19420810-6593"
+* name.family = "Arnesson"
 * name.given = "Arne"
-* name.text = "Arne Johansson"
+* name.text = "Arne Arnesson"
 * telecom[0].system = #phone
 * telecom[=].value = "+46701112233"
 * telecom[=].use = #home
 * telecom[+].system = #email
-* telecom[=].value = "arne.johansson@example.org"
+* telecom[=].value = "arne.arnesson@example.org"
 * telecom[=].use = #home
 * gender = #male
 * birthDate = "1965-03-15"
 * address.use = #home
 * address.type = #physical
-* address.line = "Storgatan 42"
-* address.city = "Stockholm"
-* address.postalCode = "11324"
+* address.line = "Borgaarfjordsgatan 12"
+* address.city = "Kista"
+* address.postalCode = "16455"
 * address.country = "SE"
 * communication.language = urn:ietf:bcp:47#sv "Swedish"
 * communication.language.text = "Swedish"
