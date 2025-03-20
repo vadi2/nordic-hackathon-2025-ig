@@ -70,6 +70,20 @@ Usage: #example
   * status = #accepted
 
 
+Instance: appointment-pending
+InstanceOf: NordicAppointment
+Usage: #example
+* status = #pending
+* serviceType.text = "Appointment Request For Arne"
+* description = "Appointment Request For Arne"
+* start = "2025-03-27T10:00:00+01:00"
+* end = "2025-03-27T10:30:00+01:00"
+* created = "2025-03-19T12:05:26+01:00"
+* participant
+  * actor = Reference(Patient/arne-67890)
+  * status = #needs-action
+
+
 Instance: appointment-home-care-wound-treatment
 InstanceOf: NordicAppointment
 Description: "Home care wound treatment"
