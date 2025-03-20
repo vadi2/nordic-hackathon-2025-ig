@@ -19,21 +19,35 @@ The following systems are part of the FHIR group:
 * Inera
 * Evondos
 * Doctrin
+* Alma Health
 
 ### Data flow
-Webdoc can produce this data: planned visits (scheduled appointments), observations (hypertension, diabetes, all deceases arne has, blood pressure, hba1c, lipids, BMI), and medications Arne takes. 
+[Webdoc](https://www.webdoc.com/), used by the healthcare practitioner, produces planned visits (scheduled [Appointments](http://hl7.org/fhir/r4/appointment.html)) that has been scheduled from the journal along with the related Patient and Practitioners that are involved. 
 
-Medrave will also produce planned appointments.
+Webdoc consumes self-reported blood pressure [Observations](http://hl7.org/fhir/R4/observation.html) as created by Doctrin (see below) to integrate this into the journal.
 
-Evondos can produce this data: medicationdispense's to report that medication has been taken or missed.
+[Medrave](https://www.medrave.com/), used by the healthcare practitioner, produces Appointment requests (regular check-up, annual physical, etc.) that need to be scheduled, and also can create [Task](http://hl7.org/fhir/r4/task.html) resources requesting that the patient do a certain action (such as take a blood pressure reading). Both of these resources are picked up by Doctrin in order to be actioned.
 
-Doctrin can produce appointments and self-reported observations, and also consume planned appointments.
+Medrave consumes and visualises for the healthcare providers the following data, in real-time using FHIR [Subscriptions](http://hl7.org/fhir/R4B/subscription.html): 
+* upcoming [Appointments](http://hl7.org/fhir/R4/appointment.html) (created by Webdoc, Doctrin, Evondos)
+* [Conditions](http://hl7.org/fhir/R4/condition.html) (copd, coronary-heart-disease, diabetes, hypertension, leg-ulcers and other-emphysema), 
+* [Observations](http://hl7.org/fhir/R4/observation.html) (blood-pressure created by Doctrin, bmi, cystatin-c, fev1-after-bd, hba1c, height, kidney-function, lipids, triglycerides and weight), and 
+* [MedicationStatements](http://hl7.org/fhir/R4/medicationstatement.html) (cholesterol, diabetes, enalapril-hypertension, glimepirid-diabetes and kol)
 
-Medrave and Inera can consume the above data and visualise it to different actors - Medrave to the healthcare providers and Inera to secondary actors such as relatives, etc. Medrave would like to use FHIR Subscriptions to be notified of data as it comes in realtime.
+[Evondos](https://www.evondos.com/) has a medicine dispensing robot which produces [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html) resources to report that medication has been taken or missed, as well as Appointment requests in case the patient has been missing too many doses and should be seen by a practitioner.
 
-Webdoc can also consume the medicationdispense data from Evondos to show that the medication has been taken or missed.
+[Doctrin](https://doctrin.com/), used by the healthcare practitioner, produces [Encounters](http://hl7.org/fhir/R4/encounter.html), updates to [Patient](http://hl7.org/fhir/R4/patient.html)'s administrative information, and Observations reporting the patient's self-reported blood pressure.
 
-<img src="user-scenario.png" alt="user-scenario" style="width:100%;"/>
+Doctrin consumes and visualises for the healthcare providers Tasks from Webdoc to reach out to the patient as well as Appointment requests from Medrave to schedule the patient.
+
+[Alma Health](https://www.almahealth.se/), used by the healthcare practitioner, consumes blood pressure Observations from Doctrin to automate patient contact via Doctrin.  
+
+[Inera](https://www.inera.se/), used by the patient and secondary actors such as their relatives, can consume all of above data (Appointments, Observations, MedicationDispenses, and Conditions) to visualise it all in a single place and tie it all together.
+
+All of this has been accomplished in a couple of preparatory meetings and a 2-day hackathon with 6 companies.
+
+<object data="workflow.svg" type="image/svg+xml"></object>
+<br/>
 
 ### Usage
 
@@ -49,4 +63,4 @@ For questions or contributions, please contact:
 
 ---
 
-*Note: This IG was developed as part of the Nordic Hackathon for Coordinated Health and Social Care, organized by Health Data Sweden in collaboration with Stockholm University and Karolinska Institutet.* 
+*Note: This IG was developed as part of the [Nordic Hackathon for Coordinated Health and Social Care](https://nordichackathon.blogs.dsv.su.), organized by Health Data Sweden in collaboration with Stockholm University and Karolinska Institutet.* 
