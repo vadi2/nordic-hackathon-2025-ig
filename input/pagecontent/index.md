@@ -64,4 +64,4 @@ For questions or contributions, please contact:
 
 ---
 
-*Note: This IG was developed as part of the [Nordic Hackathon for Coordinated Health and Social Care](https://nordichackathon.blogs.dsv.su.), organized by Health Data Sweden in collaboration with Stockholm University and Karolinska Institutet.* 
+*Note: This IG was developed as part of the [Nordic Hackathon for Coordinated Health and Social Care](https://nordichackathon.blogs.dsv.su.se/), organized by Health Data Sweden in collaboration with Stockholm University and Karolinska Institutet.* 
