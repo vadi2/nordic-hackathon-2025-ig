@@ -58,8 +58,9 @@ Implementers can use this IG to standardize data exchange in health and social c
 For questions or contributions, please contact:
 
 - Vadim Peretokin, Carasent Sverige AB
-- Monica Winge, Department of Computer and Systems Sciences, Stockholm University
-- Paul Johannesson, Department of Computer and Systems Sciences, Stockholm University
+- Monica Winge, Health Data Sweden
+- Sixten Björklund, Health Data Sweden
+- Paul Johannesson, Health Data Sweden
 
 ---
 
