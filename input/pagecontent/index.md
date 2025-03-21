@@ -36,9 +36,9 @@ Medrave consumes and visualises for the healthcare providers the following data,
 
 [Evondos](https://www.evondos.com/) has a medicine dispensing robot which produces [MedicationDispense](http://hl7.org/fhir/R4/medicationdispense.html) resources to report that medication has been taken or missed, as well as Appointment requests in case the patient has been missing too many doses and should be seen by a practitioner.
 
-[Doctrin](https://doctrin.com/), used by the healthcare practitioner, produces [Encounters](http://hl7.org/fhir/R4/encounter.html), updates to [Patient](http://hl7.org/fhir/R4/patient.html)'s administrative information, and Observations reporting the patient's self-reported blood pressure.
+[Doctrin](https://doctrin.com/) is used by the healthcare practitioner and has communnication access to the patient. It produces [Encounters](http://hl7.org/fhir/R4/encounter.html), updates to [Patient](http://hl7.org/fhir/R4/patient.html)'s administrative information, and Observations reporting the patient's self-reported blood pressure.
 
-Doctrin consumes and visualises for the healthcare providers Tasks from Webdoc to reach out to the patient as well as Appointment requests from Medrave to schedule the patient.
+Doctrin consumes and visualises Tasks from Webdoc to reach out to the patient as well as Appointment requests from Medrave to schedule the patient contact.
 
 [Alma Health](https://www.almahealth.se/), used by the healthcare practitioner, consumes blood pressure Observations from Doctrin to automate patient contact via Doctrin.  
 
